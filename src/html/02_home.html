@@ -1,26 +1,2 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gt10</title>
-    <link rel="stylesheet" href="../css/button.css">
-    <link rel="stylesheet" href="../css/02_home.css">
-    <link rel="stylesheet" href="../css/font.css">
-    <script src="../../lib/angular.min.js"></script>
-    <script src="../js/02_home.js"></script>
-</head>
-<body>
-    <div class="window" ng-app="home" ng-controller="buttonCtrl" ng-init="homeSwitch=false;isWrongWay=false">
-        <h1 class="chapter"><strong>NotGoogle</strong></h1>
-        <p>You can search anything you want to know, such as your <em>brother</em>, your <em>dog</em>, your <em>home</em> and so on.</p>
-        <div class="buttons">
-            <button class="left" ng-click="showDir()">Show</button>
-            <button class="right" ng-click="tryGo()">Search {{ where }}</button>
-            <hr>
-            <input type="text"  ng-model="where" ng-show="homeSwitch" maxlength="8" size="10">
-            <p ng-show="isWrongWay">You lost the way in the dark.</p>
-        </div>
-    </div>
-</body>
-</html>
+<html> <head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content=IE=edge><title>gt10</title><link rel=stylesheet href=../css/button.css><link rel=stylesheet href=../css/02_home.css><link rel=stylesheet href=../css/font.css><script src=../../lib/angular.min.js></script><script src=../js/02_home.js></script></head> <body> <div class=window ng-app=home ng-controller=buttonCtrl ng-init=homeSwitch=false;isWrongWay=false> <h1 class=chapter><strong>NotGoogle</strong></h1> <p>You can search anything you want to know, such as your <em>brother</em>, your <em>dog</em>, your <em>home</em> and so on.</p> <div class=buttons> <button class=left ng-click=showDir()>Show</button> <button class=right ng-click=tryGo()>Search {{ where }}</button> <hr> <input type=text ng-model=where ng-show=homeSwitch maxlength=8 size=10> <p ng-show=isWrongWay>You lost the way in the dark.</p> </div> </div> </body> </html>
