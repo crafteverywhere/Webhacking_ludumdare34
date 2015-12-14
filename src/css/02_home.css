@@ -1,10 +1,1 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-h1.chapter, div.buttons {
-    margin: 0.8em auto;
-    width: 50%;
-    color: white;
-    font-family: 'karmakooma';
-}
+*{margin:0;padding:0}h1.chapter,div.buttons{margin:.8em auto;width:50%;color:white;font-family:'karmakooma';text-align:center}p{color:white;font-family:Verdana}input{width:200px;height:30px;margin:10px auto}button{font-size:15px}
