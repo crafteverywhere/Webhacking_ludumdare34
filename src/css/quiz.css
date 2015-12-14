@@ -1,0 +1,19 @@
+h1.chapter {
+
+}
+div.info {
+    background-color: #BB0E0E;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0.2em;
+    line-height: 0.1vh;
+}
+div.info > p {
+    color: #AAB1C0;
+}
+p.question {
+    min-height: 3em;
+}
+p.default, p.answerA, p.answerB, p.answerC, p.answerD {
+    min-height: 3em;
+}

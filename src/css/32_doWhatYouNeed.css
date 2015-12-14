@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.window{
+    width:622px;
+    min-height:482px;
+    background-color: #ae9667;
+    text-align: center;
+    overflow: hidden;
+}
+
+.puzzle_img{
+    width:450px;
+    height:316px;
+    background-color: #fff043;
+    margin:0 auto;
+}
+
+#eff_32{
+    position: relative;
+    top:-319px;
+}
+
+.puzzle_discr{
+    padding:3px;
+}

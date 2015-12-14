@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="happyEnd">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy End</title>
+    <link rel="stylesheet" href="../css/happyEnd.css" type="text/css">
+    <link rel="stylesheet" href="../css/button.css" type="text/css">
+</head>
+<body ng-controller="happy_ctrl">
+<script src="../../lib/angular.min.js"></script>
+<script type="text/javascript" src="../js/happyEnd.js"></script>
+<div class="window" ng-model="value">
+    <button class="btn_left" ng-click="restart()">Restart</button>
+    <button class="btn_right" ng-click="go_back()">Go back</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.window{
+    width:622px;
+    min-height:482px;
+    background-color: #ae9667;
+    text-align: center;
+    background-image: url("../img/realend.png");
+}
+
+.btn_left{
+    position: relative;
+    top:360px;
+}
+.btn_right{
+    position: relative;
+    top:360px;
+}

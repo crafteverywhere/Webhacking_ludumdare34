@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.window{
+    width:620px;
+    min-height:480px;
+    background-color: #ae9667;
+    text-align: center;
+}
+
+.puzzle_img{
+    width:450px;
+    height:316px;
+    background-color: #fff043;
+    margin:0 auto;
+}
+.sub_img{
+    width:150px;
+    height:150px;
+    position: relative;
+}
+
+#sub_img_1{
+    left:290px;
+    top:83px;
+}
+#sub_img_2{
+    left:10px;
+    top:-67px;
+}
+#sub_img_3{
+    top:-294px;
+    left:150px;
+}
+#sub_img_4{
+    top:-290px;
+    left:150px;
+}
+
+.img_border{
+    border:1px solid black;
+}
+p{
+    max-width: 610px;
+}
+
+.puzzle_discr{
+    padding:3px;
+}

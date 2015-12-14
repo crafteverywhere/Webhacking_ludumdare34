@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -1;
+}
+h1.chapter {
+    margin: 0.8em auto;
+    width: 70%;
+    color: #B6B6B6;
+    font-family: 'karmakooma';
+}
+div.buttons {
+    margin: 0.1em auto;
+    width: 70%;
+}
+p.mail, p.alert {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 40px;
+}
+p.mail {
+    color: #B2B2B2;
+}
+p.alert {
+    color: #9F1818;
+}
+.bubble {
+    margin-top: 0.4em; 
+    width: 360px;
+    left: -45px;
+}
+.bubble:after {
+    left: 100px;
+}

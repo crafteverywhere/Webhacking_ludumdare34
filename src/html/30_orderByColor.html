@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="30_stage">
+<head>
+    <meta charset="UTF-8">
+    <title>stage_30</title>
+    <link rel="stylesheet" href="../css/30_orderByColor.css" type="text/css">
+    <link rel="stylesheet" href="../css/button.css" type="text/css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body ng-controller="30_ctrl">
+    <script src="../../lib/angular.min.js"></script>
+    <script type="text/javascript" src="../js/30_orderByColor.js"></script>
+    <div class="window" ng-model="value">
+        <div class="puzzle_title" style="font-family: Karmakooma;font-size: 50px;color: white;">Number's Puzzle</div>
+        <div class="puzzle_img">
+            <img src="../img/30_stage.jpg" alt="stage_30_img">
+        </div>
+        <p class="puzzle_discr" style="font-family: CFRobertNelson-Regular;font-size: 24px;">Their order should be...</p><br>
+        <!--下面这里是谜题的输入框-->
+        <input type="text" ng-model="input_text" class="puzzle_input">
+        <button class="btn_left" ng-click="clc()">Input</button>
+        <button ng-if="stage_value == 1" class="btn_right" ng-click="go_forward()">Next</button>
+    </div>
+</body>
+</html>

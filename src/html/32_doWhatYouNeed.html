@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="32_stage">
+<head>
+    <meta charset="UTF-8">
+    <title>stage_30</title>
+    <link rel="stylesheet" href="../css/32_doWhatYouNeed.css" type="text/css">
+    <link rel="stylesheet" href="../css/button.css" type="text/css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body ng-controller="32_ctrl">
+<script src="../../lib/angular.min.js"></script>
+<script type="text/javascript" src="../js/32_doWhatYouNeed.js"></script>
+<div class="window" ng-model="value">
+    <div class="puzzle_title" style="font-family: Karmakooma;font-size: 50px;color: white;">Input the numbers on the wall?</div>
+    <div class="puzzle_img">
+        <img src="../img/32_stage_bg_img.jpg" alt="stage_32_bg_img">
+        <img ng-if="show_eff == true" src="../img/32_stage_effect.png" alt="stage_32_effect" id="eff_32">
+    </div>
+    <p class="puzzle_discr" style="font-family: CFRobertNelson-Regular;font-size: 24px;">Try to find the hidden secrets...</p><br>
+    <!--下面这里是谜题的输入框-->
+    <input type="text" ng-model="input_text" class="puzzle_input">
+    <button class="btn_left" ng-click="act()">Act</button>
+    <button class="btn_right" ng-click="go_33()">Go Next</button>
+    <p style="font-family: CFRobertNelson-Regular;font-size: 24px;">{{ tip }}</p>
+</div>
+</body>
+</html>

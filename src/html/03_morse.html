@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>morse</title>
+    <link rel="stylesheet" href="../css/bubble.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/03_morse.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src="../../lib/angular.min.js"></script>
+    <script src="../js/03_morse.js"></script>
+</head>
+<body>
+    <img src="../img/tips_morse.png" alt="morse">
+    <div class="window" ng-app="morse" ng-controller="buttonCtrl">
+        <h1 class="chapter"><strong>Morse: the answer is here.</strong></h1>
+        <div class="buttons">
+            <button class="left" ng-mousedown="startType()" ng-mouseup="endType()"  ng-mouseenter="isHover=true" ng-init="isHover=false">Try to tap!</button>
+            <button class="right" ng-click="codeOrSend()">{{ rightName }}</button>
+            <blockquote class="bubble" ng-show="isHover">Press or long press the left button to type morse codes!<br>Hold it to clear the text! <br> If you have no idea what's morse, please notgoogle it!</blockquote>
+            <p class="mail">{{ morseMail }}{{ morse }}</p>
+            <p class="alert" ng-show="isWrong">Wrong morse code!</p>
+        </div>
+    </div>
+</body>
+</html>

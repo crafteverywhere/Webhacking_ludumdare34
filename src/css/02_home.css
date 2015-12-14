@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1.chapter, div.buttons {
+    margin: 0.8em auto;
+    width: 50%;
+    color: white;
+    font-family: 'karmakooma';
+}

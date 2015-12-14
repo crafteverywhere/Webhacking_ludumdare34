@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1.chapter, div.buttons {
+    margin: 0.8em auto;
+    width: 50%;
+    font-family: 'Karmakooma';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+button {
+	margin-bottom: 0em;
+	color: white;
+}
+.bubble {
+	font-family: 'CFRobertNelson-Regular';
+	margin-top: 0;
+	font-size: 20px;
+	color: white;
+}
+.bubble:after {
+	left: 150px;
+}
+body {
+
+}

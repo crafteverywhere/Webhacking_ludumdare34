@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tips</title>
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/tips.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src="../../lib/angular.min.js"></script>
+    <script src="../js/tips.js"></script>
+</head>
+<body>
+    <div class="window" ng-app="tips" ng-init="" ng-controller="buttonCtrl">
+        <p class="info">
+            <img src="../img/tips_caesarCipher.png" alt="cipher" class="tips_img">
+            <blockquote ng-show="tipsSwitch">
+                In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. 
+                <br>
+                It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
+                <br>
+            </blockquote>
+        </p>
+        <button class="left" ng-click="showTips()">Tips</button>
+        <button class="right" onclick="window.location.href='02_home.html';">Back</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body{
+	background-color: black;
+	text-align: center; 
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+} 
+h1{
+	color: white;
+}
+div.content {
+
+}
+.main_container{
+    margin:0 auto;
+    min-width:960px;
+    height: 1390px;
+}
+.logo{
+    position: relative;
+    width:200px;
+    left:550px;
+    top:-500px;
+}
+.window{
+    text-align: center;
+    width:940px;
+    height:1360px;
+    margin: 0 auto;
+}
+.in_frame{
+    height:482px;
+    width:622px;
+    position: relative;
+    margin:0 0 auto auto;
+    -webkit-border-image: url(src/img/index_bg.jpg);
+    -moz-border-image: url(src/img/index_bg.jpg);
+    -o-border-image: url(src/img/index_bg.jpg);
+    border-image: url(src/img/index_bg.jpg);;
+    border-image-slice: 296 160 582 160;
+    border-top-width: 296px;
+    border-bottom-width: 582px;
+    border-left-width: 160px;
+    border-right-width: 160px;
+    background-color: #6aa591;
+}
+footer{
+	color: white;
+}
+
+
+.intro_text{
+    width:1000px;
+    margin:10px auto;
+    padding:0;
+    color: #ffffff;
+    flex:1;
+    min-height: 100px;
+
+}
+.intro_text>p{
+    width:900px;
+    text-align: left;
+    margin:10px 50px;
+    font-size: 24px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .window{
+
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1680px) {
+    .window{
+        -webkit-border-image: url(src/img/index_full.jpg);
+        -moz-border-image: url(src/img/index_full.jpg);
+        -o-border-image: url(src/img/index_full.jpg);
+        border-image: url(src/img/index_full.jpg);
+        border-image-slice: 0 388 0 385;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 385px;
+        border-right-width: 388px;
+    }
+    .main_container{
+        min-width: 1400px;
+        overflow: hidden;
+    }
+    .info{
+        position: relative;
+        margin:0;
+        padding:0;
+        left:350px;
+    }
+}
+
+@media screen and (min-width: 1681px){
+    .window{
+        -webkit-border-image: url(src/img/index_full.jpg);
+        -moz-border-image: url(src/img/index_full.jpg);
+        -o-border-image: url(src/img/index_full.jpg);
+        border-image: url(src/img/index_full.jpg);
+        border-image-slice: 0 388 0 385;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 385px;
+        border-right-width: 388px;
+    }
+    .main_container{
+        min-width: 1400px;
+        overflow: hidden;
+    }
+    .info{
+        position: relative;
+        margin:0 auto;
+        padding:0;
+    }
+}
+
+hr{
+    width:100%;
+}
+#hr_div{
+    width:100%;
+}
+	
+
+

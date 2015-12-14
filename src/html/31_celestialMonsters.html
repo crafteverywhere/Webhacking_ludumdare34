@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="31_stage">
+<head>
+    <meta charset="UTF-8">
+    <title>stage_31</title>
+    <link rel="stylesheet" href="../css/31_celestialMonsters.css" type="text/css">
+    <link rel="stylesheet" href="../css/button.css" type="text/css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body ng-controller="31_ctrl">
+<script src="../../lib/angular.min.js"></script>
+<script type="text/javascript" src="../js/31_celestialMonsters.js"></script>
+<div class="window" ng-model="value">
+    <div class="puzzle_title" style="font-family: Karmakooma;font-size: 50px;color: white;">Celestial Monsters</div>
+    <div class="puzzle_img">
+        <div class="sub_img {{img_border_1}}" id="sub_img_1">
+            <img ng-if="img_1 == 1" src="../img/31_dragon.png" alt="a">
+            <img ng-if="img_1 == 2" src="../img/31_tiger.png" alt="a">
+            <img ng-if="img_1 == 3" src="../img/31_phonix.png" alt="a">
+            <img ng-if="img_1 == 4" src="../img/31_turtle.png" alt="a">
+        </div>
+        <div class="sub_img {{img_border_2}}" id="sub_img_2">
+            <img ng-if="img_2 == 1" src="../img/31_dragon.png" alt="a">
+            <img ng-if="img_2 == 2" src="../img/31_tiger.png" alt="a">
+            <img ng-if="img_2 == 3" src="../img/31_phonix.png" alt="a">
+            <img ng-if="img_2 == 4" src="../img/31_turtle.png" alt="a">
+        </div>
+        <div class="sub_img {{img_border_3}}" id="sub_img_3">
+            <img ng-if="img_3 == 1" src="../img/31_dragon.png" alt="a">
+            <img ng-if="img_3 == 2" src="../img/31_tiger.png" alt="a">
+            <img ng-if="img_3 == 3" src="../img/31_phonix.png" alt="a">
+            <img ng-if="img_3 == 4" src="../img/31_turtle.png" alt="a">
+        </div>
+        <div class="sub_img {{img_border_4}}" id="sub_img_4">
+            <img ng-if="img_4 == 1" src="../img/31_dragon.png" alt="a">
+            <img ng-if="img_4 == 2" src="../img/31_tiger.png" alt="a">
+            <img ng-if="img_4 == 3" src="../img/31_phonix.png" alt="a">
+            <img ng-if="img_4 == 4" src="../img/31_turtle.png" alt="a">
+        </div>
+
+
+    </div>
+    <br><br>
+    <p class="puzzle_discr" style="font-family: CFRobertNelson-Regular;font-size: 24px;">A puzzle about four chinese mythical creatures.</p><br>
+    <!--下面这里是谜题的输入框-->
+    <!--<input type="text" ng-model="input_text" class="puzzle_input"><br><br>-->
+    <button class="btn_left" ng-click="change_select()">Switch</button>
+    <button class="btn_right" ng-click="change_img()">{{ button_text }}</button><br><br>
+    <p style="font-family: CFRobertNelson-Regular;font-size: 24px;">Dragon in the east, WhiteTiger in the west,<br>Rosefinch in the south, Tortoise in the north.</p>
+</div>
+</body>
+</html>
